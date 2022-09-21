@@ -1,0 +1,21 @@
+[package]
+name = "deadpool_error_issue"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.20.1", features = ["rt-multi-thread", "net", "sync","macros"] }
+diesel = { version = "2.0.0", features = ["postgres", "chrono"] }
+
+dotenvy = "0.15"
+
+diesel_migrations = "2.0.0"
+
+deadpool-diesel = {version = "0.4.0", features=["postgres"]}
+
+
+
+thiserror = "1.0.31"
+
